@@ -1,0 +1,685 @@
+* {
+ margin : 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+html,body {
+height: 100%;
+width: 100%;
+}
+body{
+    background-color: #F7F7F7;
+}
+#main{
+    width: 100%;
+  
+}
+#nav{
+    width: 100%;
+    /* height: 100px; */
+    /* background-color: lightseagreen; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 25px;
+    position: fixed;
+    z-index: 99;
+}
+.nav1{
+    height: 83px;
+    overflow: hidden;
+}
+.nav1 svg{
+ /* height: 150px; */
+   display: block;
+}
+.nav2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+.prt1{
+    padding: 10px;
+}
+.prt1 a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1vw;
+    text-transform: uppercase;
+  margin: 0vw 30px;
+  color: #333;
+  font-weight: 500;
+
+}
+.prt2{
+
+    background-color: #F7F7F7;
+    padding: 10px;
+    border-radius: 100px;
+}
+.prt2 i{
+    margin: 0 2vw;
+    font-size: 1.2vw;
+
+}
+#page1{
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 1vw;
+    padding-top: 14vw;
+    
+}
+#page1 h1{
+    font-family: "futura";
+    text-transform: uppercase;
+    font-size: 15vw;
+   line-height: 1;
+}
+#page1 h1:nth-child(1){
+    padding-left: 10vw;
+}
+.vedcn{
+    width: 100%;
+    height: 100vh;
+    margin-top: 2vw;
+    position: relative;
+}
+.vedcn video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.vedcn .play{
+    text-transform: uppercase;
+    font-size: 1.3vw;
+    font-family: "futura";
+    background-color: #000;
+    color: #fff;
+    padding: 3vw 2.2vw;
+    border-radius: 50%;
+    position: fixed;
+    opacity: 0;
+    scale: 0;
+}
+
+#page{
+    padding: 0 1vw;
+    padding-top: 3vw;
+    width: 100%;
+    position: relative;
+    /* margin-bottom: 2vw; */
+}
+#hero{
+    width: 100%;
+    position: relative;
+    padding-bottom: 2vw;
+}
+#hero .hero1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#hero .hero1 h5{
+    font-family: "helvetica";
+    text-transform: uppercase;
+    font-size: 1vw;
+}
+#hero .line{
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+}
+#page2{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    padding: 0 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* .box{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} */
+.box1{
+    width: 30%;
+    height: 100%;
+    /* background-color: lightseagreen; */
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#page2 .elem{
+    width: 80%;
+    height: 60px;
+    background-color: #E5F0D6;
+    z-index: 999;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 40px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+#page2  .elem h5{
+font-size: 1vw;
+font-family: "helvetica";
+}
+#page2  .elem h5:nth-child(1){
+    font-weight: 100;
+}
+#page2 .box1:nth-child(2) .elem {
+    background-color: #F5DFCF;
+}
+#page2 .box1:nth-child(2) .elem1 {
+    background-color: #F5DFCF;
+}
+#page2 .box1:nth-child(3) .elem {
+    background-color: #FFFFFF;
+}
+#page2 .box1:nth-child(3) .elem1 {
+    background-color: #FFFFFF;
+}
+
+.elem1{
+    width: 100%;
+    height: 270px;
+    background-color: #E5F0D6;
+    position: absolute;
+    z-index: 999;
+    margin-top: 80%;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    opacity: 0;
+    overflow: hidden;
+}
+.imgdiv img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+ .elem1 .imgdiv h5{
+    font-family: "helvetica";
+font-size: 1.3vw;
+padding: 0 1.2vw;
+font-weight: 100;
+letter-spacing: -1;
+margin-top: 1vw;
+}
+#page2 .elem:hover{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#page2  .elem:hover .elem1{
+    opacity: 1;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    overflow: hidden;
+}
+#page3{
+    width: 100%;
+    /* min-height: 100vh; */
+    position: relative;
+    padding: 0 1vw;
+    padding-top: 3vw;
+    margin-bottom: 5vw;
+}
+.part1{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+.part1 .h1s{
+    width: 70%;
+    font-size: 2.2vw;
+    font-family: "futura";
+    line-height: 1;
+}
+.part1 .ps{
+    width: 27%;
+    font-family: "helvetica";
+    font-size: 1.3vw;
+    line-height: 1.5;
+ 
+}
+.part1 .ps p{
+    margin-bottom: 45px;
+}
+.part1 .ps h5{
+    font-weight: 400;
+    font-size: .9vw;
+    color: #918282;
+}
+#page4{
+    width: 100%;
+    min-height: 190vh;
+    /* background-color: lightcoral; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: relative;
+    /* margin-bottom: 3vw; */
+}
+.child{
+    width: 38vw;
+    height:90vh;
+    /* background-color: lightseagreen; */
+    /* border: 1px solid #000; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.child img{
+    height: 80%;
+    margin-bottom: 50px;
+}
+.child h5{
+margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family: "helvetica";
+    font-size: 1vw;
+}
+#cursor {
+    height: 180px;
+    width: 180px;
+    background-color: rgba(224, 139, 189, 0.814);
+    border-radius: 50%;
+    position: fixed;
+    /* transform: translate(-50%, -50%) scale(0); */
+scale:0;
+opacity: .5;
+}
+
+#page5{
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+    position: relative;
+    flex-direction: column;
+}
+#page5 h1{
+    font-family: "futura";
+    font-size: 5vw;
+    width: 70%;
+    height: 100%;
+    line-height: .9;
+    letter-spacing: -1;
+    text-align: center;
+}
+#page5 button{
+    padding: 2vw 5vw;
+    background-color: #000;
+    color: #fff;
+    margin-top: 4vw;
+    border-radius: 100px;
+    font-size: 1.5vw;
+    font-family: "helvetica";
+    text-transform: uppercase;
+}
+#page5 p{
+    margin-top: 2vw;
+    font-size: 1.4vw;
+    margin-bottom: 1vw;
+}
+#page6{
+    width: 100%;
+    min-height: 120vh;
+    padding: 0 1vw;
+    padding-top: 20vw;
+    /* background-color: red; */
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+ /* margin-bottom: 3vw; */
+}
+.parts{
+    width:32%;
+    height:100%;
+    /* background-color: lightseagreen; */
+    /* border: 1px solid #000; */
+}
+.parts img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#page6 .sidep h1{
+text-transform: uppercase;
+font-family: "helvetica";
+margin-bottom: 30px;
+}
+#page6 .sidep p{
+    margin-bottom: 50px;
+    font-size: 1.4vw;
+    width: 75%;
+    line-height: 1.4;
+}
+#page6 .sidep h5{
+    font-family: "helvetica"; 
+    font-weight: 400;
+    font-size: .9vw;
+}
+
+#pages{
+    padding: 0 1vw;
+    padding-top: 3vw;
+    width: 100%;
+    position: relative;
+}
+#heros{
+    width: 100%;
+    position: relative;
+    padding-bottom: 5vw;
+}
+#heros .hero1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#heros .hero1 h1{
+    font-family: "futura";
+    text-transform: uppercase;
+    font-size: 3vw;
+}
+#heros .line{
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+}
+#footer{
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: violet; */
+    position: relative;
+  
+    padding: 0 1vw;
+}
+.topf{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#footer .topf p{
+    text-transform: uppercase;
+    font-family: "helvetica";
+    margin-bottom: 1.6vw;
+    color: #969693;
+    font-size: 1.2vw;
+}
+.links a{
+    display: flex;
+    justify-content: flex-start;
+    text-decoration: none;
+    margin-bottom: 1vw;
+    font-size: 1.2vw;
+    line-height: .7;
+    color: #000;
+}
+.divs2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.divs svg{
+   width: 300px;
+   height: 300px;
+}
+.divs1>h5{
+    font-size: 1vw;
+    margin-top: 3vw;
+    text-transform: uppercase;
+    color: #918282;
+}
+.divs .divs1{
+    display: flex;
+    gap: 30px;
+}
+
+.bottomf {
+    width: 70%;
+  margin: 5vw auto;
+  text-align: center;
+}
+#footer .bottomf p{
+    font-size: 1.1vw;
+    color: #000;
+    line-height: 1.8;
+    font-family: "helvetica";
+}
+
+
+
+@media (max-width:600px) {
+    /* #nav{
+        padding: 15px;
+    } */
+.nav1{
+    height: 73px;
+    overflow: hidden;
+}
+.nav1 svg{
+ height: 70px;
+ width: 80px;
+ display: block;
+}
+.prt1{
+   display: none;
+   padding: 10px;
+}
+.nav2{
+    gap: 40px;
+}
+.prt2{
+    padding: 7px;
+}
+.prt2 i{
+    margin: 0 20px;
+    font-size:3.5vw;
+}
+
+#page1{
+    padding: 0 3vw;
+    padding-top: 18vw;  
+}
+#page1 h1{
+    font-size: 13.5vw;
+}
+#page1 h1:nth-child(1){
+    padding-left: 12vw;
+}
+.vedcn{
+    width: 100%;
+    height: 60vh;
+}
+
+#page{
+    padding: 0 3vw;
+    padding-top: 6vw;
+}
+
+
+#hero .hero1 h5{
+    font-size: 2.5vw;
+}
+
+#page2{
+    padding: 0 3vw;
+    flex-direction: column;
+}
+.box1{
+    width: 100%; 
+    margin-bottom: 3vw;
+}
+#page2 .elem{
+    width: 65%;
+    height: 55px;
+}
+#page2  .elem h5{
+font-size: 2.5vw;
+}
+
+#page3{
+    padding: 0 3vw;
+    padding-top: 3vw;
+    margin-bottom: 5vw;
+}
+.part1{
+    width: 100%;
+    flex-direction: column;
+}
+.part1 .h1s{
+    width: 98%;
+    font-size: 2.8vw;
+    line-height: 1;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.part1 .ps{
+    text-align: center;
+    width: 100%;
+    font-size:2.8vw;
+}
+.part1 .ps p{
+    margin-bottom: 35px;
+}
+.part1 .ps h5{
+    font-size: 2vw;
+    text-align: center;
+}
+
+#page4{
+    min-height: 140vh;
+}
+.child{
+    width: 40vw;
+    height:50vh;
+}
+
+.child h5{
+    font-size: 2.3vw;
+}
+#page5 h1{
+    font-size: 5vw;
+    width: 70%;
+   text-align: center;
+}
+#page5 button{
+    padding: 3vw 6vw;
+    margin-top: 6vw;
+    font-size: 2.5vw;
+}
+#page5 p{
+    margin-top: 5vw;
+    font-size: 3vw;
+    margin-bottom: 1vw;
+}
+
+#page6{
+    width: 100%;
+    min-height: 120vh;
+    padding: 0 3vw;
+    padding-top: 16vw;
+    flex-direction: column-reverse;
+}
+.parts{
+    width:100%;margin-bottom: 3vw;
+}
+
+#page6 .sidep h1{
+font-family: "futura";
+}
+#page6 .sidep p{
+    font-family: "helvetica"; 
+    margin-bottom: 30px;
+    font-size: 3vw;
+    width: 100%;
+}
+#page6 .sidep h5{
+    font-family: "helvetica"; 
+    font-weight: 400;
+    font-size: 2vw;
+}
+
+#pages{
+    padding: 0 3vw;
+    padding-top: 5vw;
+}
+#heros{
+    padding-bottom: 5vw;
+}
+#heros .hero1 h1{
+    font-size: 4vw;
+}
+
+#footer{
+    padding: 0 3vw;
+}
+.topf{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+#footer .topf p{
+    margin-bottom: 3vw;
+    font-size: 2.8vw;
+}
+.links a{                         
+    margin-bottom: 3vw;
+    font-size: 3vw;
+   
+}
+.divs{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 3vw;
+}
+.divs svg{
+   width: 100px;
+   height: 100px;
+   margin: 3vw 0v;
+}
+.divs1>h5{
+margin-bottom: 3vw;
+font-size: 2vw;
+}
+.divs .divs1{
+    display: flex;
+    gap: 30px;
+}
+
+.bottomf {
+    width: 100%;
+text-align: left;
+}
+#footer .bottomf p{
+    font-size: 2.5vw;
+    margin-bottom: 3vw;
+}
+
+}
